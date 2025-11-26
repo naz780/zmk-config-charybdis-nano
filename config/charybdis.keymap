@@ -56,6 +56,35 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        lang_kana {
+            bindings = <&kp LC(J)>;
+            key-positions = <16 17>;
+        };
+
+        change_lang {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <13 12>;
+        };
+
+        capslock {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <24 25>;
+        };
+
+        reset_R {
+            bindings = <&bootloader>;
+            key-positions = <15 19>;
+        };
+
+        reset_L {
+            bindings = <&bootloader>;
+            key-positions = <10 14>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -95,16 +124,16 @@
             >;
         };
 
-        layer_4 {
+        mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans    &trans  &trans
+&to_layer_0 Q  &to_layer_0 L  &to_layer_0 U  &to_layer_0 F     &to_layer_0 MINUS    &to_layer_0 K      &to_layer_0 W      &to_layer_0 R  &to_layer_0 Y  &to_layer_0 P
+&to_layer_0 E  &to_layer_0 I  &to_layer_0 A  &to_layer_0 O     &to_layer_0 COMMA    &mkp MB3           &mkp MB1           &mkp MB2       &to_layer_0 S  &to_layer_0 H
+&to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V     &to_layer_0 LSHFT    &to_layer_0 RSHFT  &to_layer_0 D      &to_layer_0 M  &to_layer_0 J  &to_layer_0 B
+                              &lt 6 TILDE    &to_layer_0 BSPC  &mt LCTRL TAB        &mt RCTRL ENTER    &to_layer_0 SPACE
             >;
         };
 
-        layer_5 {
+        scroll {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
@@ -114,15 +143,6 @@
         };
 
         layer_6 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans    &trans  &trans
-            >;
-        };
-
-        layer_7 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
