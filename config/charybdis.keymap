@@ -16,6 +16,12 @@
     require-prior-idle-ms = <150>;
 };
 
+&lt {
+    flavor = "balanced";
+    tapping-term-ms = <175>;
+    quick-tap-ms = <200>;
+};
+
 / {
     macros {
         To1_macro: To1_macro {
@@ -40,6 +46,13 @@
                 <&to 0>,
                 <&macro_wait_time 30>,
                 <&rgb_ug RGB_COLOR_HSB(250,100,50)>;
+        };
+
+        to_layer_0: to_layer_0 {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            label = "TO_LAYER_0";
         };
     };
 
