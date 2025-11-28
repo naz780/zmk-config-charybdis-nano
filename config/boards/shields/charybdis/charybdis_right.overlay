@@ -109,6 +109,16 @@
 
 
 
+&zip_temp_layer {
+	excluded-positions = <
+        15 // k
+        16 // t
+        17 // n
+    >;
+
+    require-prior-idle-ms = <200>;
+};
+
 / {
     trackball_listener {
         compatible = "zmk,input-listener";
