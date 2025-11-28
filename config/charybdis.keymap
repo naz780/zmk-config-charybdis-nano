@@ -90,7 +90,7 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp L  &kp U        &kp F            &kp MINUS        &kp K           &kp W        &kp R  &kp Y  &kp P
+&kp Q  &kp L  &kp U        &kp F            &kp MINUS        &kp P           &kp W        &kp R  &kp Y  &kp P
 &kp E  &kp I  &kp A        &kp O            &kp COMMA        &kp K           &kp T        &kp N  &kp S  &lt 5 H
 &kp Z  &kp X  &kp C        &kp V            &kp LSHIFT       &kp G           &kp D        &kp M  &kp J  &kp B
               &lt 6 TILDE  &lt 1 BACKSPACE  &mt LCTRL TAB    &mt RSHIFT RET  &lt 2 SPACE
@@ -126,10 +126,10 @@
 
         mouse {
             bindings = <
-&to_layer_0 Q  &to_layer_0 L  &to_layer_0 U  &to_layer_0 F    &to_layer_0 MINUS    &to_layer_0 K     &to_layer_0 W  &to_layer_0 R  &to_layer_0 Y  &to_layer_0 P
-&to_layer_0 E  &to_layer_0 I  &to_layer_0 A  &to_layer_0 O    &to_layer_0 COMMA    &mkp MB3          &mkp MB1       &mkp MB2       &to_layer_0 S  &lt 5 H
-&to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V    &to_layer_0 LSHFT    &to_layer_0 G     &to_layer_0 D  &to_layer_0 M  &to_layer_0 J  &to_layer_0 B
-                              &lt 6 TILDE    &lt 1 BACKSPACE  &mt LCTRL TAB        &mt RSHIFT ENTER  &lt 2 SPACE
+&kp Q  &kp L  &kp U        &kp F            &kp MINUS        &kp P             &kp W        &kp R     &kp Y  &kp P
+&kp E  &kp I  &kp A        &kp O            &kp COMMA        &mkp MB3          &mkp MB1     &mkp MB2  &kp S  &lt 5 H
+&kp Z  &kp X  &kp C        &kp V            &kp LSHFT        &kp G             &kp D        &kp M     &kp J  &kp B
+              &lt 6 TILDE  &lt 1 BACKSPACE  &mt LCTRL TAB    &mt RSHIFT ENTER  &lt 2 SPACE
             >;
         };
 
