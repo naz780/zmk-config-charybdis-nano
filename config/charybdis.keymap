@@ -11,15 +11,17 @@
 
 &mt {
     flavor = "tap-preferred";
-    tapping-term-ms = <190>;
-    quick-tap-ms = <350>;
+    tapping-term-ms = <130>;
+    quick-tap-ms = <150>;
     require-prior-idle-ms = <150>;
+    retro-tap;
 };
 
 &lt {
     flavor = "balanced";
-    tapping-term-ms = <175>;
-    quick-tap-ms = <200>;
+    tapping-term-ms = <130>;
+    quick-tap-ms = <150>;
+    retro-tap;
 };
 
 / {
@@ -90,9 +92,9 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp L  &kp U        &kp F            &kp MINUS        &kp Z           &kp W        &kp R  &kp Y  &kp P
-&kp E  &kp I  &kp A        &kp O            &kp COMMA        &kp K           &kp T        &kp N  &kp S  &lt 5 H
-&kp Z  &kp X  &kp C        &kp V            &kp LSHIFT       &kp G           &kp D        &kp M  &kp J  &kp B
+&kp Q  &kp L  &kp U        &kp F            &kp MINUS        &kp K           &kp W        &kp R  &kp Y  &kp P
+&kp E  &kp I  &kp A        &kp O            &kp COMMA        &kp G           &kp T        &kp N  &kp S  &lt 5 H
+&kp Z  &kp X  &kp C        &kp V            &kp LSHIFT       &mt RSHIFT Z    &kp D        &kp M  &kp J  &kp B
               &lt 6 TILDE  &lt 1 BACKSPACE  &mt LCTRL TAB    &mt RSHIFT RET  &lt 2 SPACE
             >;
         };
@@ -126,9 +128,9 @@
 
         mouse {
             bindings = <
-&kp Q  &kp L  &kp U        &kp F            &kp MINUS        &kp Z             &kp W        &kp R     &kp Y  &kp P
+&kp Q  &kp L  &kp U        &kp F            &kp MINUS        &kp K             &kp W        &kp R     &kp Y  &kp P
 &kp E  &kp I  &kp A        &kp O            &kp COMMA        &mkp MB3          &mkp MB1     &mkp MB2  &kp S  &lt 5 H
-&kp Z  &kp X  &kp C        &kp V            &kp LSHFT        &kp G             &kp D        &kp M     &kp J  &kp B
+&kp Z  &kp X  &kp C        &kp V            &kp LSHFT        &mt RSHIFT Z      &kp D        &kp M     &kp J  &kp B
               &lt 6 TILDE  &lt 1 BACKSPACE  &mt LCTRL TAB    &mt RSHIFT ENTER  &lt 2 SPACE
             >;
         };
