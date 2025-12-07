@@ -91,9 +91,9 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp L  &kp U        &kp F            &kp MINUS        &kp K           &kp W        &kp R  &kp Y  &kp P
-&kp E  &kp I  &kp A        &kp O            &kp COMMA        &kp G           &kp T        &kp N  &kp S  &lt 5 H
-&kp Z  &kp X  &kp C        &kp V            &kp LSHIFT       &mt RSHIFT Z    &kp D        &kp M  &kp J  &kp B
+&kp Q  &kp L  &kp U        &kp F            &kp MINUS        &kp Z           &kp W        &kp R  &kp Y  &kp P
+&kp E  &kp I  &kp A        &kp O            &kp COMMA        &kp K           &kp T        &kp N  &kp S  &lt 5 H
+&kp Z  &kp X  &kp C        &kp V            &kp LSHIFT       &mt RSHIFT G    &kp D        &kp M  &kp J  &kp B
               &lt 6 TILDE  &lt 1 BACKSPACE  &mt LCTRL TAB    &mt RSHIFT RET  &lt 2 SPACE
             >;
         };
